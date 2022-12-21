@@ -6,14 +6,17 @@ using Microsoft.AspNetCore.Authorization;
 namespace Core.Controllers;
 
 [Authorize]
-public class DashboardController : Controller {
+public class DashboardController : Controller
+{
     private readonly ILogger<HomeController> _logger;
 
-    public DashboardController(ILogger<HomeController> logger) {
+    public DashboardController(ILogger<HomeController> logger)
+    {
         _logger = logger;
     }
 
-    public IActionResult Index() {
+    public IActionResult Index()
+    {
         return View();
     }
 }
